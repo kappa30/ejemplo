@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/tpractico.css">
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1 class="nombreSuper"></h1>
+        </div>
+        <div class="div1">
+            <span class="alert"></span>
+        </div>
+        
+
+        <div class="contenedor">
+
+            <div class="tit1">
+                <h1>Productos</h1>
+            </div>
+        
+            <table class="productos table">
+                <thead class="thead-dark a1">
+                    <tr>
+                        <th class="tata">Nombre</th>
+                        <th class="tata">Precio Unitario</th>
+                        <th class="tata">Stock</th>
+                        <th class="tata">Cantidad a Comprar</th>
+                        <th class="tata">Accion</th>
+                            
+                    </tr>
+                        
+                </thead>
+                <tbody id="tb1" class="b1">
+                        
+                </tbody>
+            </table>
+            
+            <div class="tit2">
+                <h1>Carrito</h1>
+            </div>
+            
+                <table class="carrito table">
+                    
+                    <thead class="thead-dark a2">
+                        <tr>
+                            <th class="tata">Nombre</th>
+                            <th class="tata">Cantidad</th>
+                            <th class="tata">Precio Unitario</th>
+                            <th class="tata">Precio Total</th>
+                            <th class="tata">Accion</th>
+                                
+                                
+                        </tr>
+                    </thead>
+                    <tbody id="tb2" class="b2">
+                            
+                    </tbody>
+                    
+                </table>
+            
+            
+            <button onclick="calcularTotal()" class="fnl btn btn-secondary btn-lg btn-block">Finalizar Compra</button>
+            <h4 class="monto"></h3>  
+            
+        </div>
+        
+
+        
+        
+        
+        <script src="./JS/tpractico.js"></script>
+    </body>
+</html>

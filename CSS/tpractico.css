@@ -1,0 +1,95 @@
+.contenedor {
+    /*tipo de sistema de posicionamiento vamos a usar*/
+    display: grid;
+    /*definir proporciones o tamañode filas y columnas*/
+    grid-template-columns:4fr 0.1fr 4fr;
+    grid-template-rows: 0.2fr 5fr 0.1fr 0.5fr;
+    /*definir area*/
+    grid-template-areas:
+         
+        "prod vacio1 carro"
+        "tabla1 vacio2 tabla2"
+        "vacio3  vacio4 finalizar"
+        " vacio5 vacio6 pagar"
+
+        
+}
+
+
+
+.jumbotron { /* es la cabecera con logo*/
+    background-image: url(../Imagenes/Changuito.jpg);
+    background-size: 100% 100%;
+}
+
+.nombreSuper {/*es el nombre del super*/
+    text-align: center;
+    font-size: 55px;
+    font-weight: 800;
+    color: rgb(38, 7, 173);
+}
+
+
+.productos {
+    grid-area: tabla1;
+    
+    ;
+}
+
+
+.carrito {
+    
+    grid-area: tabla2;
+    
+    
+}
+
+
+.tit1 {
+    
+    grid-area: prod;
+    text-align: center;
+    background-color: gray;
+    color: honeydew;
+}
+
+.tit2 {
+    
+    grid-area: carro;
+    text-align: center;
+    background-color: gray;
+    color: honeydew;
+}
+
+.tata {
+    
+    font-size: 25px;
+       
+}
+
+
+.fnl {
+    grid-area: finalizar;
+    background-color: rgb(0, 119, 255);
+    
+}
+
+.monto {
+    grid-area: pagar;
+    font-size: 30px;
+    font-weight: 400px;
+    color: darkblue;
+    background-color:gray;
+    
+
+}
+/* texto superior de agregado al carrito*/
+.alert {
+    color:green;
+    font-weight: 700;
+    font-size: 25px;
+}
+/* para achiar un poco espacio en blanco*/
+.div1{
+    margin-top: -30px;
+}
